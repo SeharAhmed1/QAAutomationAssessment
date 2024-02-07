@@ -51,8 +51,7 @@ public class MyAppTest {
         Thread.sleep(4000);
         driver.findElement(By.id("com.android.permissioncontroller:id/permission_allow_one_time_button")).click(); // Permissions
         Thread.sleep(4000);*/
-        //driver.findElement(By.xpath("//android.widget.TextView[@text='Toronto Raptors']")).click(); 
-        
+        driver.findElement(By.xpath("//android.widget.TextView[@text='Toronto Raptors']")).click(); 
         Thread.sleep(2000);
         driver.findElement(By.id("com.fivemobile.thescore:id/action_button_text")).click();
         Thread.sleep(2000);
