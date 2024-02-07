@@ -14,11 +14,6 @@ import java.net.URL;
 import java.util.NoSuchElementException;
 
 
-/* NOTES:-
-1. To activate Appium plugins, start Appium in the terminal using the following command:  appium --use-plugins=images
-2. 
-*/
-
 
 public class MyAppTest {
     public static AppiumDriver driver;
@@ -29,12 +24,8 @@ public class MyAppTest {
     }
     public void Android_setUp() throws MalformedURLException, InterruptedException {
     	
-    	
-    	
-    	
-    	
     	// Specify the absolute path to the APK file
-        File appDir = new File("src/test/thescore");
+        File appDir = new File("src/test/java");
 		File app = new File(appDir, "theScore_ Sports News & Scores_24.2.0_Apkpure.apk");
 		
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -42,7 +33,7 @@ public class MyAppTest {
         capabilities.setCapability("appium:platformVersion", "11.0");
         capabilities.setCapability("appium:deviceName", "Pixel_4");
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("autoGrantPermissions", true); //This can also be used if you don't want to tap allow for any permissions.
+        capabilities.setCapability("autoGrantPermissions", true); //This is used if you don't want to tap allow for any permissions.
         capabilities.setCapability("appium:app", app.getAbsolutePath());
         
         URL appiumServerURL = new URL("http://localhost:4723/");// Specify the Appium server URL
@@ -55,16 +46,20 @@ public class MyAppTest {
         Thread.sleep(4000);
         driver.findElement(By.id("com.fivemobile.thescore:id/action_button_text")).click();
         Thread.sleep(4000);
+        //if you want to allow permission individually use the following script.
         /*driver.findElement(By.id("com.fivemobile.thescore:id/btn_allow")).click(); // Permissions
         Thread.sleep(4000);
         driver.findElement(By.id("com.android.permissioncontroller:id/permission_allow_one_time_button")).click(); // Permissions
         Thread.sleep(4000);*/
-        driver.findElement(By.xpath("//android.widget.TextView[@text='Toronto Raptors']")).click(); 
+        //driver.findElement(By.xpath("//android.widget.TextView[@text='Toronto Raptors']")).click(); 
+        
         Thread.sleep(2000);
         driver.findElement(By.id("com.fivemobile.thescore:id/action_button_text")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//android.widget.TextView[@text='Done']")).click();
         Thread.sleep(16000);
+        
+        
           
         
      //Automating Step 1: Open a league, team, or player page of your choice.
@@ -141,6 +136,8 @@ public class MyAppTest {
 
         //Close the driver when done
         driver.quit();
+        
+        
     }
 }
 
