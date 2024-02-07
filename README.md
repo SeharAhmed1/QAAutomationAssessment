@@ -1,12 +1,13 @@
-# Assessment for theScore. Automating Test Cases.
+# Automated Test Scripts for theScore Assessment
 
-This project demonstrates automated testing using Appium 2, Java 11, Maven, and an Android emulator. It includes instructions on setting up the project, installing dependencies, and running the automated tests.
+This project showcases automated testing utilizing Appium 2, Java 11, Maven dependencies, and an Android emulator. It encompasses scripts designed to choose a team by leveraging distinctive elements such as xpath and id, ensuring the seamless execution of scripts for seamless navigation between pages. The tests verify the correct display of pages and smooth execution of automated scripts.
 
 ## Prerequisites
 
 Before running the tests, make sure you have the following prerequisites installed on your machine:
 
 - Java 11
+- Appium 2 (run appium in terminal using appium --use-plugins=images)
 - Maven
 - Android Studio with an Android Emulator
 - Eclipse IDE (or any other preferred IDE)
