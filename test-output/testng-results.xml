@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-08T17:00:24 PKT" name="Default suite" finished-at="2024-02-08T17:02:01 PKT" duration-ms="96531">
+    <groups>
+    </groups>
+    <test started-at="2024-02-08T17:00:24 PKT" name="Default test" finished-at="2024-02-08T17:02:01 PKT" duration-ms="96531">
+      <class name="MyAppTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MyAppTest@117e949d]" started-at="2024-02-08T17:00:24 PKT" name="setUp" finished-at="2024-02-08T17:00:44 PKT" duration-ms="20174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTeamPage([Ljava.lang.String;)[pri:0, instance:MyAppTest@117e949d]" started-at="2024-02-08T17:00:44 PKT" name="testTeamPage" data-provider="teamsData" finished-at="2024-02-08T17:02:01 PKT" duration-ms="76259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@bcec031]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTeamPage -->
+      </class> <!-- MyAppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
